@@ -319,7 +319,7 @@ p{
 }
 /***Site styles***/
 .alliances{
-    height: 100vh;
+    min-height: 100vh;
 }
 .alliances > article{
     margin: 0 1rem;
@@ -371,7 +371,7 @@ p{
     text-decoration: none;
 }
 .services{
-    height: 100vh;
+    min-height: 100vh;
 }
 .services-card{
     position: relative;
@@ -397,10 +397,10 @@ p{
     pointer-events: none;
     transition: all .5s ease-in-out;
 }
-.services-card:hover .services-card-info{
+/* .services-card:hover .services-card-info{
     opacity: 1;
     pointer-events: auto;
-}
+} */
 .services-card-info > div{
     padding: 1rem;
     border: thin solid var(--white-color);
@@ -478,6 +478,10 @@ p{
     }
     .logo a{
         display: none;
+    }
+    .services-card:hover .services-card-info{
+        opacity: 1;
+        pointer-events: auto;
     }
     .services > .container{
         grid-template-columns: repeat(4, 25%);
